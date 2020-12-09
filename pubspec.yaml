@@ -26,6 +26,9 @@ dependencies:
   google_fonts: ^1.1.1
   url_launcher: ^5.7.10
   font_awesome_flutter: ^8.10.1
+  shimmer: ^1.1.2
+  flutter_icons: ^1.1.0
+  velocity_x: ^1.0.1
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -48,8 +51,10 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - lib/assets/images/ManoVikram_Outline.png
+    - lib/assets/images/ManoVikram_Signature_RemoveBG.png
+    # - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+import './myColours.dart';
+import './screens/homeScreen.dart';
 
 class MyApp extends StatefulWidget {
   @override
@@ -10,6 +14,13 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Portfolio",
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.orange,
+        accentColor: Colours.accentColor,
+        textTheme: GoogleFonts.poppinsTextTheme(),
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
       home: Portfolio(),
     );
   }
@@ -18,7 +29,7 @@ class _MyAppState extends State<MyApp> {
 class Portfolio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return HomeScreen();
   }
 }
 
